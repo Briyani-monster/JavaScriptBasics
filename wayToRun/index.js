@@ -1,3 +1,2 @@
-//using node
-
-console.log("Hello");
+//runing file in Node
+console.log("Hello World");
