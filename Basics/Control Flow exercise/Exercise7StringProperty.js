@@ -24,4 +24,8 @@ function showProperties(object){
             console.log(key,object[key]);
 }
 
+let array=['jan','Feb','Mar'];
+if( array)
+    console.log("working");
+
 
