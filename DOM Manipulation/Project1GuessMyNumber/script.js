@@ -47,7 +47,7 @@ const myfun=function(){
     }
     }
     else if(guess==(number+1)||guess==(number-1)){
-        if(score>0){
+        if(score>1){
         document.querySelector('.message').textContent="❗❗❗ You're Close";
         score--;
         document.querySelector('.score').textContent=score;
@@ -60,7 +60,7 @@ const myfun=function(){
         }
     
     else if(guess>number){
-        if(score>0){
+        if(score>1){
         document.querySelector('.message').textContent='📈 TOO High';
         score--;
         document.querySelector('.score').textContent=score;
@@ -72,14 +72,17 @@ const myfun=function(){
         }
     
     else if(guess<number){
-        if(score>0){
+        if(score>1){
         document.querySelector('.message').textContent='📉 TOO Low';
         score--;
         document.querySelector('.score').textContent=score;
         }
         else{
+            // document.querySelector('body').style.backgroundColor='red';
             document.querySelector('.message').textContent=("😩 You Loose The Game");
             document.querySelector('.score').textContent=0;
+            
+
             
 
     }
